@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+AU+VIC:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    text-align: center;
+    background:90% black;
+    color: #fff;
+
+}
+
+div {
+    min-height: 86vh;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: left;
+}
+ input {
+     text-transform: none;
+     list-style-type: none;
+ }
+
+span {
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+}
+
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li a {
+    font-family:"Lato",sans-serif;
+    color: #AB274F;
+    display: block;
+    padding: 10px 10px;
+    position: relative;
+}
+
+ul li a::after {
+    content: attr(data-popup);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    background-color: white;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0.1;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+ul li a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+  
+.first-image {
+    color:#AB274F;
+    font-family:"Playwrite AU VIC",cursive;
+    border: 2px solid white;
+    background: url('p4.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size:x-large;
+}
+.sec-image{
+    color: #7BAFD4;
+    border: 2px solid black;
+    background: url('p10.jpg');
+    background-size: cover;
+    background-attachment: fixed;;
+    font-family: "Playwrite AU VIC", cursive;
+}
+
+.ther-image {
+    color:#B53389;
+    border: 2px solid black;
+    background: url('p9.jpg');
+    background-size: cover;
+    font-family:"Playwrite AU VIC", cursive;
+    font-size: x-large;
+    background-attachment: fixed;
+    
+}
+p {
+    font-family: "Baskervville SC",serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+.submit {
+    border: 0.3rem solid white;
+    padding: 10px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 1rem;
+
+}
+
+.submit:hover {
+    background:#AB274F ;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+ol {
+    background: black;
+    border: 0.2rem solid white;
+    border-radius: 3rem;
+    max-width: 13rem;
+    margin: auto;
+    cursor: pointer;
+}
+
+ol li {
+    list-style-type: none;
+   
+}
+
+ol:hover {
+    background:#512888;
+}
+.Detail {
+    margin-top: 2rem;
+    border: 0.2rem solid white;
+    background: url(p7.jpg);
+    background-size: cover;
+    font-size: 1.5rem;
+    font-style: italic;
+    border-radius: 0.6rem;
+    color: whitesmoke;
+    opacity:0.4;
+}
+.Detail:hover{
+    opacity:1;
+}
+
+.Detail h4 {
+  margin-top: auto;
+    
+}
+.pro {
+    border: 0.2rem solid white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 1rem;
+
+}
+
+.pro:hover {
+    background: darkred;
+}
+
+.ved {
+    background: black;
+    color: white;
+    border: 0.2rem solid white;
+    border-radius: 2rem;
+    max-width: 18rem;
+    margin: auto;
+    height: auto;
+    
+}
+
+.ved input {
+    cursor: pointer;
+}
+.ved:hover{
+    background: #512888;
+}
